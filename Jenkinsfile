@@ -46,7 +46,7 @@ pipeline {
         FRONTEND_IMAGE = "wanderlust-frontend-beta"
     
         // ── Git ──────────────────────────────────────────────────
-        GIT_REPO_URL   = "https://github.com/bebanana18-dotcom/Wanderlust-Mega-Project-GCP.git"
+        GIT_REPO_URL   = "https://github.com/HimanshuMaurya1921/MCA-Project-GCP-SECURE-Wonderlust.git"
         GIT_BRANCH     = "main"
         GITHUB_CRED    = "GITHUB-CRED"
     
