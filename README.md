@@ -760,7 +760,7 @@ chmod 700 get_helm.sh
 ```bash
 #step1
 sudo apt update
-sudo apt install fontconfig openjdk-17-jre
+sudo apt install fontconfig openjdk-21-jre
 java -version
 
 #step-2
