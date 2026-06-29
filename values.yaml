@@ -20,7 +20,7 @@ backend:
   image:
     repository: us-central1-docker.pkg.dev/piyush-gcp/wanderlust-repo/wanderlust-backend-beta
     # digest is injected by Jenkins pipeline via --set backend.image.digest=...
-    digest: "sha256:f5520db19734a753baad71d39f7d4ebcc7572b63aa2340714f40c9478fa47691"
+    digest: "sha256:288832f045f14f85d074e7ac8d169cc194e101642d398b0f43bce795b9192af6"
   port:
     container: 8080
     service: 80
@@ -56,7 +56,7 @@ frontend:
   image:
     repository: us-central1-docker.pkg.dev/piyush-gcp/wanderlust-repo/wanderlust-frontend-beta
     # digest is injected by Jenkins pipeline via --set frontend.image.digest=...
-    digest: "sha256:b17a0e4b9e41f3adbcfc4176aacdd10dbdedbbf2886523385924c6263ab5cc97"
+    digest: "sha256:b3986f5715bde869084caae2196da6ed6bcc255bd90152c42ec7da767e1d39a1"
   port:
     container: 80
     service: 80
