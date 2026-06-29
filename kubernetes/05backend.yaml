@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+  namespace: wanderlust
+  labels:
+    app: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      name: backend
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: us-central1-docker.pkg.dev/piyush-gcp/wanderlust-repo/wanderlust-backend-beta@sha256:a461ae88095e545f8b371a0c554fd3b80c6f62b1f737d7276cc4e657d32ae8a2
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: wanderlust
+spec:
+  type: NodePort
+  selector:
+    app: backend
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
