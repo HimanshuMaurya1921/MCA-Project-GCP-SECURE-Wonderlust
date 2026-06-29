@@ -229,6 +229,7 @@ pipeline {
                                 --create-namespace \
                                 --atomic \
                                 --timeout 5m \
+                                -f values.yaml \
                                 --kubeconfig \$KUBECONFIG
                         """
                     }
