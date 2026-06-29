@@ -36,7 +36,7 @@ pipeline {
         SONAR_SERVER      = "SONAR-SYSTEM"
         SONAR_PROJECT_KEY = "wanderlust"
 
-        GCP_PROJECT  = "piyush-gcp"
+        GCP_PROJECT  = "piyush-gcp-500813"
         GAR_LOCATION = "us-central1"
         GAR_REPO     = "wanderlust-repo"
         GAR_REGISTRY = "${GAR_LOCATION}-docker.pkg.dev"
